@@ -1,0 +1,227 @@
+html {
+  font-size: 18px;
+  line-height: 1.4;
+  font-family: Helvetica, sans-serif;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+header {
+  height: 30rem;
+  background-image: url("../images/glasses-bg.png");
+  background-size: cover;
+  padding-top: 1rem;
+}
+
+nav {
+  color: white;
+}
+
+#nav-content {
+  background-color: cadetblue;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+#nav-left, #nav-right {
+  display: flex;
+  align-items: center;
+}
+
+.nav-menu-big {
+  margin-left: 2rem;
+}
+
+.nav-menu-small {
+  display: none;
+}
+
+#menu-img {
+  height: 1.5rem;
+  margin-right: 1rem;
+}
+
+#banner-title .container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#banner-title-content {
+  background-color: white;
+  padding: 1.5rem 5rem;
+  margin-top: 10rem;
+  position: relative;
+  left: 2rem;
+}
+
+#banner-title-content span {
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+.feature {
+  height: 8rem;
+  width: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: 3rem;
+  text-align: center;
+}
+
+.feature img {
+  width:5rem;
+}
+
+#paper-icon {
+  width: 3.5rem;
+}
+
+#features-content {
+  display: flex;
+  justify-content: center;
+}
+
+#information-content {
+  display: flex;
+  justify-content: center;
+}
+
+.info-block {
+  width: 35%;
+  margin-bottom: 5rem;
+}
+
+.info-header {
+  font-weight: bold;
+  color: white;
+  font-size: 1rem;
+  padding: 0.5rem 1.25rem;
+  background-color: cadetblue;
+  width: fit-content;
+  margin-bottom: 1rem;
+}
+
+#philosophy {
+  margin-right: 5%;
+}
+
+#footer-content {
+  background-color: azure;
+  padding: 4rem;
+  display: flex;
+  align-items: center;
+}
+
+#footer-logo img {
+  height: 1.5rem;
+  margin-right: 1rem;
+}
+
+@media only screen and (max-width: 1050px) {
+  header {
+    padding-top: 0;
+    height: 22rem;
+  }
+
+  #banner-title-content {
+    position: static;
+    left: 0;
+    margin-right: 2rem;
+    padding: 0.75rem 4rem;
+    margin-top: 5rem;
+  }
+
+  #banner-title-content span {
+    font-size: 1.33rem;
+  }
+}
+
+@media only screen and (max-width: 670px) {
+  header {
+    height: 17rem;
+    background-position: 20%;
+  }
+
+  #banner-title-content {
+    padding: 1rem 0;
+    margin-top: 9rem;
+    margin-right: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  #banner-title-content span {
+    font-size: 1rem;
+  }
+
+  .nav-menu-big {
+    display: none;
+  }
+
+  .nav-menu-small {
+    display: block;
+  }
+
+  #features-content {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3.77rem;
+    margin-bottom: 3.77rem;
+  }
+
+  .feature {
+    margin: 0 0 1.54rem 0;
+    justify-content: flex-start;
+    height: fit-content;
+  }
+
+  .feature:nth-child(3) {
+    margin: 0;
+  }
+
+  .feature span {
+    font-size: 0.77rem;
+    margin-top: 0.5rem;
+  }
+
+  #information-content {
+    flex-direction: column;
+  }
+
+  .info-block {
+    width: 100%;
+    margin-bottom: 4rem;
+  }
+
+  .info-header {
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .info-text {
+    font-size: 0.77rem;
+  }
+
+  #footer-content {
+    justify-content: center;
+  }
+
+  #copyright {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .nav-menu-small {
+    display: none;
+  }
+}
