@@ -222,7 +222,7 @@ nav {
 }
 
 @media only screen and (max-width: 425px) {
-  .nav-menu-small {
+  #nav-left span {
     display: none;
   }
 }
